@@ -1,0 +1,12 @@
+galaxy_info:
+  author: DANS-KNAW
+  description: Ansible role that installs PostGreSQL and does some boilerplate configuring.
+  company: "DANS-KNAW"
+  license: "Apache 2.0"
+  min_ansible_version: 2.3
+  platforms:
+    - name: EL
+  galaxy_tags:
+    # Add tags to classify this module
+
+allow_duplicates: yes
