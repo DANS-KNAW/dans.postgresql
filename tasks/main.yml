@@ -8,7 +8,7 @@
   register: pg_log
   
 - name: Initialize PostGreSQL database
-  command: service postgresql initdb
+  command: sudo -u postgres initdb -D /var/lib/pgsql/data -E {{ postgresql_default_encoding }}
   when: pg_log.stat.exists == False
   
 - name: Turn on PostGreSQL auto vacuum 1/2
